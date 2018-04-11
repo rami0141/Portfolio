@@ -1,0 +1,23 @@
+
+.navbar {
+    background-color: #F3969A;
+}
+
+.jumbotron {
+    background-color: #78C2AD;
+}
+
+.card-img-top {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px !important;
+    height: 220px;
+    border: 5px solid white;
+}
+
+.card {
+    margin-top: 0px;
+    padding-top: 110px;  
+}
