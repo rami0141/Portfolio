@@ -3,7 +3,7 @@
     background-color: #F3969A;
 }
 
-.jumbotron {
+.green{
     background-color: #78C2AD;
 }
 
@@ -20,4 +20,44 @@
 .card {
     margin-top: 0px;
     padding-top: 110px;  
+}
+
+
+/* HOVER EFFECT - PORTFOLIO */
+.image:hover {
+    opacity: 0.3;
+}
+
+.middle:hover {
+    opacity: 1;
+}
+
+.text {
+    color: #F3969A;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100%;
+    width: 92%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;  
+}
+
+.overlay:hover {
+    opacity: 0.9;
 }

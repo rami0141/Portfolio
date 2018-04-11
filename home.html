@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand text-white m-0" href="#"><img src="images/logo.JPG" style="height:60px;"></a>
+        <a class="navbar-brand text-white m-0" href="#home"><img src="images/logo2.JPG" style="height:60px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About Me</a>
+                    <a class="nav-link text-white" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Portfolio</a>
+                    <a class="nav-link text-white" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link ml-1 text-white" href="#"></i>Contact Me</a>
@@ -35,7 +35,7 @@
     </nav>
 
     <!-- HOME JUMBOTRON -->
-    <div class="jumbotron text-center text-white" style=" background-color: #F3969A; height: 460px; margin-bottom:0px;">
+    <div class="jumbotron text-center text-white" id="home" style=" background-color: #F3969A; height: 460px; margin-bottom:0px;">
         <!--style="height:550px; background-image: url('images/beach.JPG')"-->
         <div class="container">
             <h1 class="display-4">Cristina Zhang</h1>
@@ -50,8 +50,8 @@
     <!-- ABOUT ME  -->
     <div class="row text-center">
         <div class="col-lg-4"></div>
-            <div class="col-lg-4 text-center">
-                <div class="card mb-5 border-white" style="width: 25rem;">
+            <div class="col-lg-4 text-center" id="about">
+                <div class="card mb-5 border-white">
                     <img class="card-img-top img-circle rounded-circle" src="images/cristina.PNG" alt="Card image cap">
                     <div class="card-block">
                         <p class="card-text">Greetings! I am Cristina.  I am a freelance Full Stack Web Developer.</p>
@@ -61,11 +61,71 @@
         </div>
 
         <!-- PORTFOLIO -->
+        <div class="green text-white" id="portfolio">
+            <div class="container">
+                <h3 class="p-3">Portfolio:</h3>           
+                    <div class="row mt-5">                
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <img src="images/fabulist.JPG" alt="Munoz Motors" class="img-thumbnail" style="height:200px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="#"><div class="text">Go to Munoz Motor</div></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="images/fabulist.JPG" alt="Fabulist" class="img-thumbnail" style="height:200px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="https://fabulist.herokuapp.com/"><div class="text">Go to Fabulist</div></a>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                        <div class="row pt-5">
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <img src="images/travelbuddy.JPG" alt="TravelBuddy" class="img-thumbnail" style="height:200px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="https://travelbuddy-8ad21.firebaseapp.com/"><div class="text">Go to TravelBuddy</div></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="images/burger.JPG" alt="Burger App" class="img-thumbnail" style="height:200px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="#"><div class="text">Go to Burger App</div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pt-5">
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <img src="images/liri.JPG" alt="Liri" class="img-thumbnail" style="height:200px; width:350px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="https://github.com/rami0141/LIRI"><div class="text">Go to Liri</div></a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="images/trivia.JPG" alt="Trivia Game" class="img-thumbnail" style="height:200px; width:350px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/TriviaGame/"><div class="text">Go to Dog Trivia</div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pt-5 mb-5">
+                            <div class="col-6 col-md-4 offset-md-2">
+                                <img src="images/train.JPG" alt="Train Scheduler" class="img-thumbnail" style="height:200px; width:350px;">
+                                <div class="overlay">
+                                    <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/Train-Scheduler/"><div class="text">Go to Train Scheduler</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
