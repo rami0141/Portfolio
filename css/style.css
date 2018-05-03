@@ -139,4 +139,33 @@ footer {
     .contactSection {
         margin-left: 120px;
     }
+
+    .img-thumbnail {
+        margin-left: 60px;
+    }
+
+    .overlay {
+        left: 75px;
+    }
+
+    .contactSection {
+        margin: 40px;
+    }
+}
+/*------------------------------*/
+@media (min-width: 1200px) {
+    .card-img-top {
+        position: absolute;
+        top: -180px;
+        left: 45%;
+        margin-left: -100px;
+        width: 280px !important;
+        height: 300px;
+        border: 5px solid white;
+    } 
+
+    .jumbotron {
+        height: 560px;
+    }  
+}    
 }
