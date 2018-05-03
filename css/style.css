@@ -1,7 +1,15 @@
+.name {
+    margin-top: 30px;
+    font-size: 40px;
+}
 
-/*h3 {
-    color: #F3969A;
-}*/
+.jumbotron {
+    height: 480px;
+}
+
+.needMargin {
+    margin-bottom: 40px;
+}
 
 .greenButton {
     background-color: #F3969A;
@@ -18,6 +26,9 @@
     border-bottom: 3px solid #ccc;
 }
 
+.card-block {
+    margin: 30px;
+}
 
 .card-img-top {
     position: absolute;
@@ -34,6 +45,9 @@
     padding-top: 110px;  
 }
 
+.contactSection {
+    margin: 20px;
+}
 
 
 /* HOVER EFFECT - PORTFOLIO */
@@ -64,8 +78,8 @@
     bottom: 0;
     left: 15px;
     right: 0;
-    height: 100%;
-    width: 92%;
+    height: 200px;
+    width: 350px;
     opacity: 0;
     transition: .5s ease;
     background-color: white;  
@@ -77,4 +91,52 @@
 
 footer {
     border-top: 8px solid #F3969A;
+}
+
+.link-1 {
+  transition: 0.3s ease;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 10px;  
+}
+
+.link-1:hover {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 6px 0; 
+}
+
+/* MEDIA QUERIES */
+/* -------------------------------*/
+@media (min-width: 576px) {
+    .name {
+        font-size: 60px;
+    }
+
+    .img-thumbnail {
+        margin-left: 80px;
+    }
+
+    .overlay {
+        left: 95px;
+    }
+    .contactSection {
+        margin: 50px;
+    }
+}
+
+/* -------------------------------*/
+@media (min-width: 768px) {
+    .img-thumbnail {
+        margin-left: 150px;
+    }
+
+    .overlay {
+        left: 165px;
+    }
+
+    .contactSection {
+        margin-left: 120px;
+    }
 }
