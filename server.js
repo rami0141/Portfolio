@@ -43,83 +43,20 @@ app.post("/send", (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-    	from: this.email,
+    	from: `${req.body.name}`,
      	to: process.env.email,
     	subject: 'New message from portfolio contact form ',
-    	text: "hello"
+    	text: `${req.body.name} ${req.body.email} ${req.body.message}`
     }
 // send mail with defined transport object
     smtpTrans.sendMail(mailOptions, (error, info) => {
         if (error) {
             return console.log(error);
         }
-        console.log('Message sent: %s', info.messageId);
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
+        console.log('Message sent: ', info.messageId);
     });
  })
 	
-// NODEMAILER
-// Sending mail function
-
-// app.post('/send', function(req, res) {
-// 	if(req.body.mail == "" || req.body.subject == "") {
-// 		res.send("Error: Email & Subject should not be blank!");
-// 	}
-
-
-// 	var mailOptions = {
-// 		from: "Node Emailer - <email@gmail.com>", //sender address
-// 		to: req.body.email, // list of receivers
-// 		subject: req.body.name+" -", //Subject Line
-// 		text: "Hello from portfolio",
-// 		html: req.body.message
-// 	}
-// 	smtpTransport.sendMail(mailOptions, function (error, response) {
-// 		if (error) {
-// 			console.log("Email could not be sent due to an error: " + error);
-// 		} else {
-// 			console.log("Email has been sent");		
-// 		}
-// 	});
-// });
-
-// this houses the data
-// POST route from contact form
-// app.post('/contact', function (req, res) {
-// let transporter =  nodemailer.createTransport({
-// 	service: 'gmail',
-// 	secure: true,
-// 	port:25, 
-// 	auth: {
-// 		user: process.env.email,
-// 		pass: process.env.password
-// 	},
-// 	tls: {
-// 		rejectUnauthorized: false
-// 	}
-// });
-// })
-//body of email
-  // mailOpts = {
-  //   from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-  //   to: process.env.email,
-  //   subject: 'New message from portfolio contact form ',
-  //   text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-  // };
-
-// If error exists
-// transporter.sendMail(HelperOptions, (error, info) => {
-// 	if(error) {
-// 		return console.log(error);
-// 	}
-// 	console.log("The message was sent");
-// 	console.log(info);
-// });
-
-
-
-
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
