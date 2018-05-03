@@ -1,10 +1,17 @@
+.navbar-brand, .font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar-nav, p, a, label {
+    font-family: 'Raleway', sans-serif;
+}
 .name {
     margin-top: 30px;
     font-size: 40px;
 }
 
 .jumbotron {
-    height: 480px;
+    height: 450px;
 }
 
 .needMargin {
@@ -107,6 +114,7 @@ footer {
   padding: 6px 0; 
 }
 
+
 /* MEDIA QUERIES */
 /* -------------------------------*/
 @media (min-width: 576px) {
@@ -159,13 +167,15 @@ footer {
         top: -180px;
         left: 45%;
         margin-left: -100px;
-        width: 280px !important;
-        height: 300px;
+        width: 250px !important;
+        height: 280px;
         border: 5px solid white;
     } 
 
     .jumbotron {
-        height: 560px;
+        height: 530px;
     }  
+
+ 
 }    
 }

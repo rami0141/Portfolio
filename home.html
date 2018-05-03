@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.JPG" />
     <title>Cristina Zhang's Portfolio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand text-white m-0 mr-3" href="#home"><img src="images/logo2.JPG" style="height:50px;"> Cristina Zhang</a>
+        <a class="navbar-brand text-white m-0 mr-3" style="font-size: 25px;" href="#home"><img src="images/logo2.JPG" style="height:50px;"> Cristina Zhang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,9 +43,11 @@
     <div class="jumbotron text-center text-white" style="background-color: #F3969A; margin-bottom:0px;">
         <!--style="height:550px; background-image: url('images/beach.JPG')"-->
         <div class="container">
-            <h1 class="name">Cristina Zhang</h1>
-            <p class="lead">I am a Full Stack Web Developer</p>
-            <p class="lead">I create beautiful UIs and web applications</p>
+            <div class="box">
+                <h1 class="name split">Cristina Zhang</h1>
+                <p class="lead split">I am a Full Stack Web Developer</p>
+                <p class="lead split">I create beautiful UIs and web applications</p>
+            </div>
             <div id="about"></div>
             <a class="text-white m-4 mt-3" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
             <a class="text-white m-4" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
@@ -69,7 +73,7 @@
     <!-- PORTFOLIO -->
     <div id="portfolio">
         <div class="container pb-3">
-            <h3 class="p-3 mt-5 green">Portfolio:</h3>
+            <h3 class="p-3 mt-5 green font">Portfolio:</h3>
             <div class="row mt-3">
                 <div class="col-xs-12 col-md-12 col-lg-6">
                     <img src="images/munozmotors.PNG" alt="Munoz Motors" class="img-thumbnail needMargin" style="height:200px; width:350px;">
@@ -139,7 +143,7 @@
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-4 offset-xl-2">          
             <div class="card contactSection mt-5 bg-secondary" style="padding-top:0px;">
                 <div class="card-body green">
-                    <h3 class="text-center">Leave A Message</h3>
+                    <h3 class="text-center font">Leave A Message</h3>
                     <hr />
                     <form>
                         <div class="form-group">
@@ -162,7 +166,7 @@
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-4">
             <div class="card contactSection">
                 <div class="card-body green bg-secondary text-center" style="height:200px;">
-                    <h3>Connect With Me</h3>
+                    <h3 class="font">Connect With Me</h3>
                     <hr />
                     <a class="text-white m-4 mt-3" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
                     <a class="text-white m-4" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
@@ -181,7 +185,7 @@
             <div class="col-md-12">
                 <footer class="text-center p-3 mb-2 bg-dark text-white">
                     <div class="container">
-                        <p>&copy;Copyright2017 Cristina Zhang</p>
+                        <p class="font">&copy; Cristina Zhang2018 </p>
                     </div>
                 </footer>
             </div>
@@ -194,5 +198,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
