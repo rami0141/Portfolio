@@ -44,7 +44,7 @@ app.post("/send", (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
     	from: this.email,
-     	to: "czhang0141@gmail.com",
+     	to: process.env.email,
     	subject: 'New message from portfolio contact form ',
     	text: "hello"
     }
