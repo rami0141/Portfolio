@@ -44,7 +44,7 @@
         <!--style="height:550px; background-image: url('images/beach.JPG')"-->
         <div class="container">
             <div class="box">
-                <h1 class="name split">Cristina Zhang</h1>
+                <h1 class="name split font">Cristina Zhang</h1>
                 <p class="lead split">I am a Full Stack Web Developer</p>
                 <p class="lead split">I create beautiful UIs and web applications</p>
             </div>
@@ -140,14 +140,14 @@
 
     <!-- CONTACT ME -->
     <div class="row">
-        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-4 offset-xl-2">          
+        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5 offset-xl-1">          
             <div class="card contactSection mt-5 bg-secondary" style="padding-top:0px;">
                 <div class="card-body green">
                     <h3 class="text-center font">Leave A Message</h3>
                     <hr />
 
                     <!-- CONTACT FORM -->
-                    <form action="/send" name="send" id="contactform" method="post">
+                    <form name="send" id="contactform">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="name" name="name" class="form-control" id="name" placeholder="John McGuire" required>
@@ -157,15 +157,19 @@
                             <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Leave A Note</label>
-                            <textarea class="form-control" name="message" id="message" rows="10" required=""></textarea>
+                            <label for="number">Phone Number</label>
+                            <input type="text" name="number" class="form-control" id="number" placeholder="000-000-0000" required>
                         </div>
-                        <button name="submit" value="send" id="submit" type="submit" class="btn btn-lg btn-block greenButton">Primary</button>
+                        <div class="form-group">
+                            <label for="message">Leave A Note</label>
+                            <textarea class="form-control" name="message" id="message" rows="5" required=""></textarea>
+                        </div>
+                        <button id="submit" type="button" class="btn btn-lg btn-block greenButton">Primary</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-4">
+        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5">
             <div class="card contactSection">
                 <div class="card-body green bg-secondary text-center" style="height:200px;">
                     <h3 class="font">Connect With Me</h3>
@@ -177,9 +181,6 @@
             </div>
         </div>
     </div>
-
-
-
 
         <!--FOOTER-->
 
