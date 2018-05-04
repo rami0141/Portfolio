@@ -9,11 +9,13 @@ $(document).ready(function () {
 	    	message: $("#message").val()
 		}
     	$.post("/send", newMessage).done(function (data) {
+    		console.log(sent);
     	});
-    	
-    	$("#name").val("");
-    	$("#email").val("");
-    	$("#number").val("");
-    	$("#message").val("");
-	})
+
+    $("#name").val("");
+    $("#email").val("");
+    $("#number").val("");
+    $("#message").val("");
+    
+	});
 });

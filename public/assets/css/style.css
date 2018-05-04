@@ -164,7 +164,7 @@ footer {
 @media (min-width: 1200px) {
     .card-img-top {
         position: absolute;
-        top: -180px;
+        top: -170px;
         left: 45%;
         margin-left: -100px;
         width: 250px !important;
@@ -173,7 +173,7 @@ footer {
     } 
 
     .jumbotron {
-        height: 530px;
+        height: 540px;
     }  
 
  
