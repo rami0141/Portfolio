@@ -58,15 +58,11 @@
     margin: 20px;
 }
 
-.video {
-    background-color: black;
-    color: white;
-    margin-top: -23px;
-    width: 302px;
-    margin-left: 11px;
-    padding: 10px;
-    font-size: 14px;
+
+.video:hover {
+    color: #F3969A;
 }
+
 
 /* HOVER EFFECT - PORTFOLIO */
 .image:hover {
@@ -180,8 +176,8 @@ transform:scale(1.1);
   background: rgba(0,0,0,0.7);
   position: absolute;
   height: 93%;
-  width: 88%;
-  left: 5%;
+  width: 95%;
+  left: 6%;
   top: 3%;
   bottom: 0;
   right: 0;
@@ -262,20 +258,19 @@ transform:scale(1.1);
         margin-left: 80px;
     }
 
+    .content .content-overlay {    
+       height: 93%;
+       width: 87%;
+       left: 5%;
+       top: 3%;
+ 
+    }
+
     .overlay {
         left: 95px;
     }
     .contactSection {
         margin: 50px;
-    }
-
-    .video {
-        background-color: black;
-        color: white;
-        margin-top: -23px;
-        width: 350px;
-        margin-left: 77px;
-        padding: 10px;
     }
 }
 
