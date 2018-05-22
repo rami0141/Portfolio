@@ -138,6 +138,10 @@ transform:scale(1.1);
 -o-transform:scale(1.1)
 }
 
+.icon:hover svg {
+    color: black;
+}
+
 .content-details {
   position: absolute;
   text-align: center;

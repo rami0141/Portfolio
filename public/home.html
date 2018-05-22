@@ -50,9 +50,9 @@
             </div>
             <div id="about"></div>
 
-            <a class="text-white m-4 mt-3" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
+            <a class="text-white m-4 mt-3 icon" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
 
-            <a class="text-white m-4" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a class="text-white m-4 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
             <!-- <a class="text-white m-4" href="#" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a> -->
         </div>
     </div>
@@ -119,26 +119,27 @@
         </div>
         <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-5">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/Animal-Button-Giphy/" target="_blank" alt="Animal-Button-Giphy">
+                <a class="nav-link ml-1 text-white" href="https://github.com/rami0141/TravelBuddy" target="_blank" alt="TravelBuddy">
                     <div class="content-overlay"></div>
-                        <img class="content-image" src="assets/images/animal-giphy.JPG" style="height:200px; width:350px;">
-                    <div class="content-details fadeIn-right">
-                        <h3>Animal-Button-Giphy</h3>
+                        <img class="content-image" src="assets/images/TravelBuddy.png" style="height:200px; width:350px;">
+                    <div class="content-details fadeIn-left">
+                        <h3>TRAVELBUDDY</h3>
                         <p>CHECK IT OUT</p>
                     </div>
                 </a>
             </div>
         </div>
     </div>
+   
 
     <div class="row mb-5">
         <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-6 left">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://github.com/rami0141/TravelBuddy" target="_blank" alt="TravelBuddy">
+                <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/Animal-Button-Giphy/" target="_blank" alt="Animal-Button-Giphy">
                     <div class="content-overlay"></div>
-                        <img class="content-image" src="assets/images/TravelBuddy.png" style="height:200px; width:350px;">
-                    <div class="content-details fadeIn-left">
-                        <h3>TRAVELBUDDY</h3>
+                        <img class="content-image" src="assets/images/animal-giphy.JPG" style="height:200px; width:350px;">
+                    <div class="content-details fadeIn-right">
+                        <h3>Animal-Button-Giphy</h3>
                         <p>CHECK IT OUT</p>
                     </div>
                 </a>
@@ -157,12 +158,11 @@
             </div>
         </div>
     </div>
-
+</div>
     <div id="contactMe"></div>
     </div>
+
  
-
-
     <!-- CONTACT ME -->
     <div class="row">
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5 offset-xl-1">          
@@ -172,7 +172,7 @@
                     <hr />
 
                     <!-- CONTACT FORM -->
-                    <form id="contactform">
+                    <form id="contactform">                  
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="name" name="name" class="form-control" id="name" placeholder="John McGuire" required>
@@ -194,13 +194,55 @@
                 </div>
             </div>
         </div>
+
+
+        <div id="error" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLongTitle">ERROR</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        PLEASE FILL OUT ALL FIELDS!
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-center">"Thank you. Your message was sent!"</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5">
             <div class="card contactSection">
                 <div class="card-body green bg-secondary text-center" style="height:200px;">
                     <h3 class="font">Connect With Me</h3>
                     <hr />
-                    <a class="text-white m-4 mt-3" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
-                    <a class="text-white m-4" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                    <a class="text-white m-4 mt-3 icon" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
+                    <a class="text-white m-4 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
                 </div>
             </div>
         </div>
