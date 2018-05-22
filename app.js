@@ -10,7 +10,7 @@ require("dotenv").config();
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
