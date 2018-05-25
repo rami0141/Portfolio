@@ -6,6 +6,11 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.me {
+    margin-top: 10px;
+}
+
+
 .name {
     margin-top: 15px;
     font-size: 48px;
@@ -29,11 +34,14 @@
     color: white;
 }
 
+.me {
+    margin-top: 120px;
+}
 .green{
     color: #F3969A;
 }
 
-#portfolio {
+body {
     background-image: url('../images/regal.png');
     border-top: 3px solid #ccc;
     border-bottom: 3px solid #ccc;
@@ -59,7 +67,7 @@
 }
 
 .contactSection {
-    margin: 20px;
+    margin: 20px;*/
 }
 
 

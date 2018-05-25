@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $(".alert").hide();
+    $("#portfolio").hide();
+    $("#contactMe").hide();
+
     var name = $("#name");
     var email = $("#email");
     var number = $("#number");
@@ -48,6 +51,24 @@ $(document).ready(function () {
     $('#videos').click(function () {
         $("#mm").fadeIn();
         $("#oo").fadeIn();
+    });
+
+     $('.about').click(function () {
+        $("#about").fadeIn();
+        $("#portfolio").hide();
+        $("#contactMe").hide();
+    })
+
+    $('.portfolio').click(function () {
+        $("#about").hide();
+        $("#portfolio").fadeIn();
+        $("#contactMe").hide();
+    });
+
+     $('.contactMe').click(function () {
+        $("#about").hide();
+        $("#portfolio").hide();
+        $("#contactMe").fadeIn();
     })
 
 });

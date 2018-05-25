@@ -30,20 +30,20 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto animated bounceInUp">
                 <li class="nav-item">
-                    <a class="nav-link text-white link-1" href="#about"><i class="fa fa-info-circle mr-1" aria-hidden="true"></i>About Me</a>
+                    <a class="nav-link text-white link-1 about" href="#"><i class="fa fa-info-circle mr-1" aria-hidden="true"></i>About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white link-1" href="#portfolio"><i class="fa fa-book mr-1" aria-hidden="true"></i>Portfolio</a>
+                    <a class="nav-link text-white link-1 portfolio" href="#"><i class="fa fa-book mr-1" aria-hidden="true"></i>Portfolio</a>
                 </li>
                  <li>
                     <a class="nav-link ml-1 text-white link-1" id="videos" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"> 
                     <i class="fa fa-film mr-1" aria-hidden="true"></i> Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-1 text-white link-1" href="#contactMe"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>Contact Me</a>
+                    <a class="nav-link ml-1 text-white link-1 contactMe" href="#"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>Contact Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-1 text-white link-1" href="#"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>Resume</a>
+                    <a class="nav-link ml-1 text-white link-1" href="https://files.acrobat.com/a/preview/b3c9aa1c-1c54-4a4b-ae7a-db3b6a375b29" target="_blank"><i class="fa fa-file mr-1" aria-hidden="true"></i>Resume</a>
                 </li>
             </ul>
         </div>
@@ -59,20 +59,19 @@
             <div class="typewriter mb-4">
                 <p class="lead split">I create beautiful UIs and web applications</p>
             </div>
-            <div id="about"></div>
+           <!--  <div id="about"></div> -->
             <a class="text-white m-5 mt-3 icon" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x mt-3"></i></a>
-            <a class="text-white m-5 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
-
-        
+            <a class="text-white m-5 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>    
         </div>
     </div>
     </div
 
     <!-- ABOUT ME  -->
+    <div id="about">
     <div class="row text-center">
         <div class="col-lg-3"></div>
         <div class="col-md-12 col-lg-6 text-center">
-            <div class="card mb-5 border-white image-hover img-zoom-in">
+            <div class="card mb-5 border-white">
                 <img class="card-img-top img-circle rounded-circle animated bounceInDown" src="assets/images/cristina.PNG" alt="Card image cap">
                 <div class="card-block">
                     <p class="card-text mb-3 animated bounceInLeft">Welcome to my Portfolio! My name is Cristina Zhang and I am a Full Stack Web Developer. I am a highly motivated and skilled Web Developer capable of building fully functioning and appealing websites.</p>
@@ -80,6 +79,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -91,10 +91,10 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button> 
-            <div id="mm" class="mb-4">
+            <!-- <div id="mm" class="mb-4">
                 <h3 class="text-center green p-1">Munoz Motors Admin Demo</h3>
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/268649613" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            </div>
+            </div> -->
             <div id="oo">
                 <h3 class="text-center green p-1">Hair-Over-Flowers User & Admin Demo</h3>
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/268649613" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -106,10 +106,18 @@
 
 
     <!-- PORTFOLIO -->
- <div id="portfolio" class="animated pulse">
-    <h3 class="green ml-5 mt-5">Portfolio</h3>
+    <div id="portfolio" class="animated pulse">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-md-12 col-lg-6 text-center">
+                <img class="card-img-top img-circle rounded-circle animated bounceInDown"  src="assets/images/cristina.PNG" alt="Card image cap">  
+                <!-- <h3 class="green ml-4 mt-5">Contact Me:</h3> -->
+            </div>
+        </div>
+
+
     <div class="row mt-2">
-        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-6 mb-3 left">
+        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-6 mb-3 left me">
             <div class="content">
                 <a class="nav-link text-white" href="http://www.munozmotors.com/" target="_blank" alt="Munoz Motors">
                     <div class="content-overlay"></div>
@@ -119,13 +127,13 @@
                         <p>FREELANCE FULL STACK WEB APP</p>
                         <p>GO TO WEBSITE</p>
                     </a>
-                         <button id="motors" type="button" class="btn btn-outline-light" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"><i class="fa fa-film mr-1" aria-hidden="true"></i>ADMIN SECTION DEMO</button>
+                        <!--  <button id="motors" type="button" class="btn btn-outline-light" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"><i class="fa fa-film mr-1" aria-hidden="true"></i>ADMIN SECTION DEMO</button> -->
                     </div>
                 </a>
             </div>
             
         </div>
-        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-5">
+        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-5 me">
             <div class="content">
                 <a class="nav-link text-white" href="http://hairoverflowers.com/" target="_blank" alt="Hair Over Flowers">
                     <div class="content-overlay"></div>
@@ -201,11 +209,17 @@
 
  
     <!-- CONTACT ME -->
-    <div id="contactMe">
-    <h3 class="green ml-4 mt-5">Contact Me:</h3>
+    <div id="contactMe" class="animated pulse">
+        <div class="row">  
+            <div class="col-lg-3"></div>
+            <div class="col-md-12 col-lg-6 text-center">
+                <img class="card-img-top img-circle rounded-circle animated bounceInDown"  src="assets/images/cristina.PNG" alt="Card image cap">  
+                <!-- <h3 class="green ml-4 mt-5">Contact Me:</h3> -->
+            </div>
+        </div>
      <!-- CONTACT ME -->
-    <div class="row">
-        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5 offset-xl-1">          
+    <div class="row me">  
+        <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5 offset-xl-1">               
             <div class="card contactSection mt-5 bg-secondary" style="padding-top:0px;">
                 <div class="card-body green">
                     <h3 class="text-center font">Leave A Message</h3>
@@ -271,6 +285,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
         <!--FOOTER-->
 
