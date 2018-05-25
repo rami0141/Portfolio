@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway" rel="stylesheet">
@@ -17,42 +22,45 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand text-white m-0 mr-3" style="font-size: 25px;" href="#home"><img src="assets/images/logo2.JPG" style="height:50px;"> Cristina Zhang</a>
+        <a class="navbar-brand text-white m-0 mr-3 animated bounce" style="font-size: 25px;" href="#home"><img src="assets/images/logo2.JPG" style="height:50px;"> Cristina Zhang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto animated bounceInUp">
                 <li class="nav-item">
-                    <a class="nav-link text-white link-1" href="#about">About Me</a>
+                    <a class="nav-link text-white link-1" href="#about"><i class="fa fa-info-circle mr-1" aria-hidden="true"></i>About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white link-1" href="#portfolio">Portfolio</a>
+                    <a class="nav-link text-white link-1" href="#portfolio"><i class="fa fa-book mr-1" aria-hidden="true"></i>Portfolio</a>
+                </li>
+                 <li>
+                    <a class="nav-link ml-1 text-white link-1" id="videos" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"> 
+                    <i class="fa fa-film mr-1" aria-hidden="true"></i> Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ml-1 text-white link-1" href="#contactMe">Contact Me</a>
+                    <a class="nav-link ml-1 text-white link-1" href="#contactMe"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>Contact Me</a>
                 </li>
             </ul>
-
+            <a href="https://docs.google.com/document/d/1sLSYrsdHayXjjYg8fG3QfVPR1GbrQYf8QHh1iU_H6kk/edit?usp=sharing">Resume</a>
         </div>
     </nav>
 
-    <!-- HOME JUMBOTRON -->
+     <!-- HOME JUMBOTRON -->
     <div id="home">
     <div class="jumbotron text-center text-white" style="background-color: #F3969A; margin-bottom:0px;">
         <!--style="height:550px; background-image: url('images/beach.JPG')"-->
-        <div class="container">
-            <div class="box">
-                <h1 class="name split font">Cristina Zhang</h1>
-                <p class="lead split">I am a Full Stack Web Developer</p>
+        <div class="container mb-3">
+                <h1 class="name split font animated bounceInDown">Cristina Zhang</h1>
+                <h6 class="lead split mb-3 animated tada">I am a Full Stack Web Developer</h6> 
+            <div class="typewriter mb-4">
                 <p class="lead split">I create beautiful UIs and web applications</p>
             </div>
             <div id="about"></div>
+            <a class="text-white m-5 mt-3 icon" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x mt-3"></i></a>
+            <a class="text-white m-5 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
 
-            <a class="text-white m-4 mt-3 icon" href="https://github.com/rami0141" target="_blank"><i class="fab fa-github fa-3x  mt-3"></i></a>
-
-            <a class="text-white m-4 icon" href="https://www.linkedin.com/in/cristina-zhang/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
             <!-- <a class="text-white m-4" href="#" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a> -->
         </div>
     </div>
@@ -63,107 +71,137 @@
         <div class="col-lg-3"></div>
         <div class="col-md-12 col-lg-6 text-center">
             <div class="card mb-5 border-white image-hover img-zoom-in">
-                <img class="card-img-top img-circle rounded-circle" src="assets/images/cristina.PNG" alt="Card image cap">
+                <img class="card-img-top img-circle rounded-circle animated bounceInDown" src="assets/images/cristina.PNG" alt="Card image cap">
                 <div class="card-block">
-                    <p class="card-text mb-3">Welcome to my Portfolio! My name is Cristina Zhang and I am a Full Stack Web Developer. I am a highly motivated and skilled Web Developer capable of building fully functioning and appealing websites.</p>
-                    <p> I excel at HTML5, CSS3, Bootstrap, Media Queries and JavaScript. I can work with APIs, jQuery, Node.js, MySQL, MongoDB and more. Please reach out to me with comments and questions.</p>
+                    <p class="card-text mb-3 animated bounceInLeft">Welcome to my Portfolio! My name is Cristina Zhang and I am a Full Stack Web Developer. I am a highly motivated and skilled Web Developer capable of building fully functioning and appealing websites.</p>
+                    <p class="animated bounceInLeft"> I excel at HTML5, CSS3, Bootstrap, Media Queries and JavaScript. I can work with APIs, jQuery, Node.js, MySQL, MongoDB and more. Please reach out to me with comments and questions.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+
+    <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content m-4 bg-dark">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> 
+            <div id="mm" class="mb-4">
+                <h3 class="text-center green p-1">Munoz Motors Admin Demo</h3>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/268649613" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div id="oo">
+                <h3 class="text-center green p-1">Hair-Over-Flowers User & Admin Demo</h3>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/268649613" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- PORTFOLIO -->
-    <div id="portfolio">
-    <div class="row mt-5">
-        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-6 left">
+ <div id="portfolio" class="animated pulse">
+    <h3 class="green ml-5 mt-5">Portfolio</h3>
+    <div class="row mt-2">
+        <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-6 mb-3 left">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="http://www.munozmotors.com/" target="_blank" alt="Munoz Motors">
+                <a class="nav-link text-white" href="http://www.munozmotors.com/" target="_blank" alt="Munoz Motors">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/munozmotors.PNG" style="height:200px; width:350px;">
                     <div class="content-details fadeIn-left">
                         <h3>Munoz Motors</h3>
-                        <p>CHECK IT OUT</p>
-                        <a class="nav-link ml-1 text-white" href="https://github.com/rami0141" target="_blank" alt="Munoz Motors">
-                        <p class="text-center video">GO TO MUNOZ MOTORS VIDEO DEMO </p></a>
+                        <p>FREELANCE FULL STACK WEB APP</p>
+                        <p>GO TO WEBSITE</p>
+                    </a>
+                         <button id="motors" type="button" class="btn btn-outline-light" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"><i class="fa fa-film mr-1" aria-hidden="true"></i>ADMIN SECTION DEMO</button>
                     </div>
                 </a>
             </div>
+            
         </div>
         <div class="col-xs-12 col-sm-11 col-md-12 col-lg-5 col-xl-5">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="http://hairoverflowers.com/" target="_blank" alt="Hair Over Flowers">
+                <a class="nav-link text-white" href="http://hairoverflowers.com/" target="_blank" alt="Hair Over Flowers">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/hairoverflowers.PNG" style="height:200px; width:350px;">
                     <div class="content-details fadeIn-right">
                         <h3>HAIR-OVER-FLOWERS</h3>
-                        <p>CHECK IT OUT</p>
+                        <P>BACK END WEB DEVELOPER</P>
+                        <p>GO TO WEBSITE</p>
+                    </a>
+                        <button id="aaa" type="button" class="btn btn-outline-light" data-toggle="modal" data-target=".bd-example-modal-lg" data-src="https://player.vimeo.com/video/268649613?autoplay=1"><i class="fa fa-film mr-2" aria-hidden="true"></i>ADMIN SECTION DEMO </button>
                     </div>
+
                 </a>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-6 left">
+        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-6 mb-3 left">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://fabulist.herokuapp.com/" target="_blank" alt="Fabulist">
+                <a class="nav-link text-white" href="https://fabulist.herokuapp.com/" target="_blank" alt="Fabulist">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/fabulist.JPG" style="height:200px; width:350px;">
                     <div class="content-details fadeIn-left">
                         <h3>FABULIST</h3>
-                        <p>CHECK IT OUT</p>
+                        <p>FRONT AND BACK END DEVELOPER</p>
+                        <p>GO TO WEBSITE</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-5">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/TravelBuddy/" target="_blank" alt="TravelBuddy">
+                <a class="nav-link text-white" href="https://rami0141.github.io/TravelBuddy/" target="_blank" alt="TravelBuddy">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/TravelBuddy.png" style="height:200px; width:350px;">
-                    <div class="content-details fadeIn-left">
+                    <div class="content-details fadeIn-right">
                         <h3>TRAVELBUDDY</h3>
-                        <p>CHECK IT OUT</p>
+                        <p>GO TO WEBSITE</p>
                     </div>
                 </a>
             </div>
         </div>
     </div>
-   
-
     <div class="row mb-5">
-        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-6 left">
+        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-6 mb-3 left">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/Animal-Button-Giphy/" target="_blank" alt="Animal-Button-Giphy">
+                <a class="nav-link text-white" href="https://rami0141.github.io/Animal-Button-Giphy/" target="_blank" alt="Animal-Button-Giphy">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/animal-giphy.JPG" style="height:200px; width:350px;">
-                    <div class="content-details fadeIn-right">
+                    <div class="content-details fadeIn-left">
                         <h3>Animal-Button-Giphy</h3>
-                        <p>CHECK IT OUT</p>
+                        <p>GO TO WEBSITE</p>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-xs-11 col-sm-11 col-md-12 col-lg-5 col-xl-5">
             <div class="content">
-                <a class="nav-link ml-1 text-white" href="https://rami0141.github.io/TriviaGame/" target="_blank" alt="Dog Trivia">
+                <a class="nav-link text-white" href="https://rami0141.github.io/TriviaGame/" target="_blank" alt="Dog Trivia">
                     <div class="content-overlay"></div>
                         <img class="content-image" src="assets/images/trivia.JPG" style="height:200px; width:350px;">
                     <div class="content-details fadeIn-right">
                         <h3>DOG TRIVIA</h3>
-                        <p>CHECK IT OUT</p>
+                        <p>GO TO WEBSITE</p>
                     </div>
                 </a>
             </div>
         </div>
     </div>
 </div>
-    <div id="contactMe"></div>
-    </div>
+</div>
 
  
     <!-- CONTACT ME -->
+    <div id="contactMe">
+    <h3 class="green ml-4 mt-5">Contact Me:</h3>
+     <!-- CONTACT ME -->
     <div class="row">
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5 offset-xl-1">          
             <div class="card contactSection mt-5 bg-secondary" style="padding-top:0px;">
@@ -189,13 +227,13 @@
                             <label for="message">Leave A Note</label>
                             <textarea class="form-control" name="message" id="message" rows="5" required=""></textarea>
                         </div>
-                        <button id="submit" type="button" class="btn btn-lg btn-block greenButton">Primary</button>
+                        <button id="submit" type="button" class="btn btn-lg btn-block greenButton">Send</button>
                     </form>
                 </div>
             </div>
         </div>
 
-
+   <!--  Modal -->
         <div id="error" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -206,35 +244,20 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                        <div class="err">
                         PLEASE FILL OUT ALL FIELDS!
+                        </div>
+                        <div class="thanks">
+                        "Thank you. Your message was sent!"
+                        </div>
                     </div>
+
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h6 class="text-center">"Thank you. Your message was sent!"</h6>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-          </div>
-        </div>
-
 
         <div class="col-xs-12 col-md-11 col-lg-6 col-xl-5">
             <div class="card contactSection">
@@ -247,7 +270,6 @@
             </div>
         </div>
     </div>
-
         <!--FOOTER-->
 
         <div class="row">
@@ -259,6 +281,11 @@
                 </footer>
             </div>
         </div>
+
+
+
+
+
 
 
 

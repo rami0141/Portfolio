@@ -1,5 +1,5 @@
 $(document).ready(function () {
-$(".alert").hide();
+    $(".alert").hide();
     var name = $("#name");
     var email = $("#email");
     var number = $("#number");
@@ -10,7 +10,8 @@ $(".alert").hide();
 
         if (!name.val().trim() || !email.val().trim() || !number.val().trim() || !message.val().trim())  {
             //alert("please fill out form")
-            $('#error').modal('show'); 
+            $('#error').modal('show');
+            $(".thanks").hide(); 
             return;          
         }
 
@@ -24,12 +25,29 @@ $(".alert").hide();
     	$.post("/send", newMessage).done(function (data) {   		
     	});
 
-        $('#myModal').modal('show'); 
+        $('#error').modal('show');
+        $(".thanks").fadeIn();
+        $(".err").hide();
+        $(".modal-title").hide();
         $("#name").val("");
         $("#email").val("");
         $("#number").val("");
         $("#message").val("");   
 	});
 
+    $('#motors').click(function () {
+        $("#oo").hide();
+        $("#mm").fadeIn();
+    });
+
+    $('#aaa').click(function () {
+        $("#mm").hide();
+        $("#oo").fadeIn();
+    })
+
+    $('#videos').click(function () {
+        $("#mm").fadeIn();
+        $("#oo").fadeIn();
+    })
 
 });
