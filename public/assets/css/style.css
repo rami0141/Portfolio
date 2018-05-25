@@ -148,16 +148,7 @@ footer {
 .modal-body {
   position:relative;
 }
-.close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  z-index:999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
 
-}
 /* --------------- PROJECT HOVER EFFECT ------------------ */
 
 .content {
@@ -277,10 +268,6 @@ footer {
         margin-left: 25%;
     }
 
-    .img-thumbnail {
-        margin-left: 80px;
-    }
-
     .content .content-overlay {    
        height: 93%;
        width: 87%;
@@ -293,9 +280,6 @@ footer {
         font-size: 20px;
     }
 
-    .overlay {
-        left: 95px;
-    }
     .contactSection {
         margin: 50px;
     }
@@ -318,10 +302,6 @@ footer {
 
     .contactSection {
         margin-left: 120px;
-    }
-
-    .overlay {
-        left: 75px;
     }
 
     .contactSection {
