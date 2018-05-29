@@ -48,6 +48,10 @@ $(document).ready(function () {
     $('#motors').click(function () {
         $("#oo").hide();
         $("#mm").fadeIn();
+        $(".demo").fadeIn();
+        $(".thanks").hide();
+        $(".err").hide();
+        $(".modal-title").hide();
     });
 
     $('#aaa').click(function () {
@@ -80,6 +84,10 @@ $(document).ready(function () {
         $("#about").hide();
         $("#portfolio").hide();
         $("#contactMe").fadeIn();
-    })
+    });
 
+    // This function closes the navbar collapse menu after clicking on a link
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
 });
