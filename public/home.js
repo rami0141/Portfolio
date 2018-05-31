@@ -57,6 +57,10 @@ $(document).ready(function () {
     $('#aaa').click(function () {
         $("#mm").hide();
         $("#oo").fadeIn();
+        $(".demo").fadeIn();
+        $(".thanks").hide();
+        $(".err").hide();
+        $(".modal-title").hide();
     })
 
     $('#videos').click(function () {
