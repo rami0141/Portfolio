@@ -1,6 +1,6 @@
 # Portfolio
 
-![alt text](assets/images/app.PNG)
+![alt text](public/assets/images/app.PNG)
 
 Check my portfolio out at http://www.cristina-zhang.com
 
