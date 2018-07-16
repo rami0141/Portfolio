@@ -164,6 +164,19 @@ footer {
 
 }
 
+@media (min-width: 992px) {
+  .portImage {
+  width: 400px;
+  height: 300px;
+  }
+.flo {
+    position:relative;
+    width:400px;
+    height:370px;
+    overflow:hidden;
+}
+}
+
 
 /*------------------------------*/
 @media (min-width: 1200px) {
