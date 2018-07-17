@@ -836,14 +836,14 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var BlogsService = /** @class */ (function () {
     function BlogsService(http) {
         this.http = http;
-        this.uri = 'http://localhost:4000';
+        this.uri = 'http://104.236.38.11:4000';
         this.blogChanged = new rxjs_Subject__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this.blogs = [];
         console.log("Initialized");
     }
     // Gets All Blogs
     BlogsService.prototype.getBlogs = function () {
-        return this.http.get('http://localhost:4000/blogs');
+        return this.http.get(this.uri + "/blogs");
         // .map(res => res.json());
     };
     BlogsService.prototype.setBlogs = function (blogs) {
@@ -877,7 +877,7 @@ var BlogsService = /** @class */ (function () {
             blog: blog
         };
         console.log(newBlog);
-        this.http.post('http://localhost:4000/blogs/add', newBlog)
+        this.http.post(this.uri + "4000/blogs/add", newBlog)
             .subscribe(function (res) { return console.log("Blog Submitted!"); });
     };
     // updateBlogs(id, title, name, topic, imageLink, summary, blog) {
