@@ -25,6 +25,11 @@ app.get("/", function (req, res) {
         res.sendFile(path.join(__dirname, "public/home.html"));
     });
 
+app.get("/golden", function (req, res) {
+        app.use(express.static(path.join(__dirname, 'dist')));
+        res.sendFile(path.join(__dirname, 'dist/index.html'));
+    });
+
 app.post("/send", (req, res) => {
     console.log(req.body);
 
@@ -46,9 +51,9 @@ app.post("/send", (req, res) => {
         from: `${req.body.name}`,
         to: process.env.email,
         subject: 'New message from portfolio contact form ',
-        text: `From: ${req.body.name} 
-        Email: ${req.body.email} 
-        Phone: ${req.body.number} 
+        text: `From: ${req.body.name}
+        Email: ${req.body.email}
+        Phone: ${req.body.number}
         Message: ${req.body.message}`
     }
 // send mail with defined transport object
@@ -60,7 +65,7 @@ app.post("/send", (req, res) => {
         res.sendFile(path.join(__dirname, "public/home.html"))
     });
  })
-    
+
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });

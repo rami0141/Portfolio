@@ -16,10 +16,10 @@ $(document).ready(function () {
             $('.modal').modal('show');
             $(".err").fadeIn();
             $(".thanks").hide();
-            $(".demo").hide(); 
+            $(".demo").hide();
             $("#oo").hide();
             $("#mm").hide();
-            return;          
+            return;
         }
 
   		var newMessage = {
@@ -29,7 +29,7 @@ $(document).ready(function () {
 	    	message: $("#message").val()
 		}
 
-    	$.post("/send", newMessage).done(function (data) {   		
+    	$.post("/send", newMessage).done(function (data) {
     	});
 
         $('.modal').modal('show');
@@ -42,7 +42,7 @@ $(document).ready(function () {
         $("#name").val("");
         $("#email").val("");
         $("#number").val("");
-        $("#message").val("");   
+        $("#message").val("");
 	});
 
     $('#motors').click(function () {
@@ -82,12 +82,14 @@ $(document).ready(function () {
         $("#about").hide();
         $("#portfolio").fadeIn();
         $("#contactMe").hide();
+        $(".demo").hide();
     });
 
      $('.contactMe').click(function () {
         $("#about").hide();
         $("#portfolio").hide();
         $("#contactMe").fadeIn();
+        $(".demo").hide();
     });
 
     // This function closes the navbar collapse menu after clicking on a link
