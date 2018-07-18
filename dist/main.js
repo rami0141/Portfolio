@@ -836,7 +836,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var BlogsService = /** @class */ (function () {
     function BlogsService(http) {
         this.http = http;
-        this.uri = 'http://104.236.38.11:4000';
+        this.uri = 'http://127.0.0.1:3000/mongo';
         this.blogChanged = new rxjs_Subject__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this.blogs = [];
         console.log("Initialized");
