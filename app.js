@@ -4,13 +4,24 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const mongconnect = require("./Dbroute/mongodb")
+const mongoose = require('mongoose');
+const cors = require('cors');
 require("dotenv").config();
 
 
 // Sets up the Express App
 // =============================================================
 const app = express();
+app.use(cors());
 const PORT = 3000;
+
+//Mongodb
+mongoose.connect('mongodb://localhost:27017/blog');
+const connection = mongoose.connection;
+connection.on('connected', () => {
+  console.log('Mongo connection established successfuly!')
+});
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,9 +41,10 @@ app.get("/golden", function (req, res) {
         res.sendFile(path.join(__dirname, 'dist/index.html'));
     });
 
+app.use("/mongo",mongconnect)
+
 app.post("/send", (req, res) => {
     console.log(req.body);
-
 
 // sending emails with SMTP, configuration using SMTP settings
     var smtpTrans = nodemailer.createTransport({
